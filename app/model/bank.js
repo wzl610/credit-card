@@ -2,7 +2,11 @@ module.exports = app => {
   const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const Bank = app.model.define('bank', {
-    id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+    id: { 
+      type: INTEGER, 
+      primaryKey: true, 
+      autoIncrement: true 
+    },
     name: STRING(24),
     icon: STRING(32),
     quota: INTEGER,
